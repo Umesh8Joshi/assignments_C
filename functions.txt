@@ -1,0 +1,18 @@
+Program to put punctuations in given string
+
+Read mode: FILE of txt extension will be passed as command line argumnet
+possible output: write a text file with punctuations given by standard english grammer rules
+
+Functions list:
+
+    - Arrays of english grammar rules
+    - READ file
+    - Convert string into substring of words
+    - Divide that array into 2D array of sentances. Followed by first Capital word.
+    - Identify possible names
+    - Identify type of sentance
+    - Put punctuations
+    - Join all array element to form a single string
+    - write that string into file
+
+feel free to add or modify functions
