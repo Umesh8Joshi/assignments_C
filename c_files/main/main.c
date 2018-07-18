@@ -1,4 +1,5 @@
 #include "main.h"
+#include "rule.h"
 
 void printLine();
 
