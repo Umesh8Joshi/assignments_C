@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Address	main.h	/^struct Address{$/;"	s
+User	main.h	/^struct User{$/;"	s
+address	main.h	/^    struct Address address;$/;"	m	struct:User	typeref:struct:User::Address
+age	main.h	/^    int age;$/;"	m	struct:User
+city	main.h	/^    char city[50];$/;"	m	struct:Address
+enterData	main.c	/^struct User enterData(struct User p){$/;"	f
+houseName	main.h	/^    char houseName[50];$/;"	m	struct:Address
+main	main.c	/^int main(int argc, char const *argv[])$/;"	f
+name	main.h	/^    char name[50];$/;"	m	struct:User
+printData	main.c	/^void printData(struct User p){$/;"	f
+street	main.h	/^    char street[50];$/;"	m	struct:Address
