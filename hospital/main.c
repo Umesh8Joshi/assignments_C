@@ -8,6 +8,8 @@ struct node* createList(struct User);
 struct node* addToList(struct User, bool);
 void print_list(void);
 int menu(void);
+int delFromList(char*);
+struct node* searchInList(char*,struct node**);
 
 // Initial Linked List
 struct node *head = NULL;
@@ -99,6 +101,54 @@ struct node* addToList(struct User p1, bool at_end){
     }
 }
 
+struct node* searchInList(char *name, struct node **prev){
+    struct node *ptr = head;
+    struct node *tmp = NULL;
+    bool found = false;
+    while(ptr != NULL){
+        fprintf(stdout, "%s", p.name);
+        if(ptr->p.name == name){
+            found = true;
+            break;
+        }else{
+            tmp = ptr;
+            ptr = ptr->next;
+        }
+    }
+
+    if(found){
+        if(prev){
+            *prev = tmp;
+        }
+        return ptr;
+    }else{
+        return NULL;
+    }
+}
+
+int delFromList(char *name){
+    struct node *prev = NULL;
+    struct node *del = NULL;
+    fprintf(stdout, "Deleting %s's data", name);
+    del = searchInList(name, &prev);
+    if(del == NULL){
+        fprintf(stderr, "Data not found");
+        return -1;
+    }else{
+        if(prev != NULL){
+            prev->next = del->next;
+        }
+        if(del == curr){
+            curr = prev;
+        }else if(del == head){
+            head = del->next;
+        }
+    }
+    free(del);
+    del = NULL;
+    return 0;
+}
+
 void print_list(void){
     struct node *ptr = head;
     while(ptr != NULL){
@@ -111,6 +161,7 @@ void print_list(void){
 int menu(void){
     int i = 0;
     struct User p;
+    char delName[20];
     fprintf(stdout, "\nSelection Menu\n");
     fprintf(stdout, "1.\t\tAdd User\n2.\t\tUpdate User\n3.\t\tDelete User\n4.\t\tPrint ALL\n5.\t\tExit\n");
     scanf("%d", &i);
@@ -118,6 +169,11 @@ int menu(void){
         case 1:
             p = enterData(p);
             addToList(p, true);
+            break;
+        case 3:
+            fprintf(stdout, "Enter name to be deleted");
+            scanf(" %[^\n]delName", delName);
+            delFromList(delName);
             break;
         case 4:
             print_list();
