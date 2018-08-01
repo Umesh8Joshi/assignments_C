@@ -271,17 +271,10 @@ void fileSave(void){
  * @return      void
  */
 void menu(void){
-    int choice = 0;
+    int choice;
     printf("\nWelcome to Hospital managment System\nPlease select your option");
     printf("1.\tInsert Data\n2.\tDelete Data\n3.\tEdit Data\n4.\tPrint All\n5.\tExit\n");
-    char c = getchar();
-    if(isdigit(c)){
-        choice = (int)c;
-    }else{
-        printf("%c", c);
-        printf("\n\n\t\tWrong Choice\n\n");
-        menu();
-    }
+    scanf("%d", &choice);
     switch(choice){
         case '1':
             insertFirst(getData());
