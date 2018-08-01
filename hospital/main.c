@@ -10,6 +10,8 @@ void print_list(void);
 int menu(void);
 int delFromList(char*);
 struct node* searchInList(char*,struct node**);
+void printName(struct User);
+struct node* search(char*);
 
 // Initial Linked List
 struct node *head = NULL;
@@ -83,19 +85,19 @@ struct node* addToList(struct User p1, bool at_end){
         return NULL;
     }else{
     struct node *ptr = (struct node*)malloc(sizeof(struct node));
-    // if(NULL == ptr){
-    //     fprintf(stderr, "List Failed");
-    //     return NULL;
-    // }
+    if(NULL == ptr){
+        fprintf(stderr, "List Failed");
+        return NULL;
+    }
     ptr->p = p1;
     ptr->next = NULL;
-    // if(at_end){
-    //     curr->next = ptr;
-    //     curr = ptr;
-    // }else{
-    ptr->next = head;
-    head = ptr;
-    // }
+    if(at_end){
+        curr->next = ptr;
+        curr = ptr;
+    }else{
+        ptr->next = head;
+        head = ptr;
+    }
     return ptr;
     free(ptr);
     }
@@ -124,6 +126,15 @@ struct node* searchInList(char *name, struct node **prev){
     }else{
         return NULL;
     }
+}
+
+struct node* search(char *name){
+    struct node *ptr = head;
+    while(head != NULL){
+        fprintf(stdout, "%s", ptr->p.name);
+        ptr = ptr->next;
+    }
+    return ptr;
 }
 
 int delFromList(char *name){
@@ -158,6 +169,11 @@ void print_list(void){
     }
 }
 
+void printName(struct User p){
+    struct node *ptr = head;
+    fprintf(stdout, "%s", head->p.name);
+}
+
 int menu(void){
     int i = 0;
     struct User p;
@@ -173,7 +189,9 @@ int menu(void){
         case 3:
             fprintf(stdout, "Enter name to be deleted");
             scanf(" %[^\n]delName", delName);
-            delFromList(delName);
+            //delFromList(delName);
+            //printName(p);
+            search(delName);
             break;
         case 4:
             print_list();
