@@ -41,7 +41,7 @@ void printGiven(struct node*);
 int editChoiceOpt(void);
 struct node* edit(void);
 struct node* delete(void);
-void fileSave(void);
+int fileSave(void);
 void menu(void);
 
 /**Function     insertFirst
@@ -241,13 +241,33 @@ struct node* delete(){
  * @param       void
  * @return      void
  */
-void fileSave(void){
-    FILE *fp;
-    fp = fopen("hospital.txt", "w");
+int fileSave(void){
+    // FILE *fp;
+    // fp = fopen("hospital.txt", "w");
+    // struct node* curr = head;
+    // if(curr == NULL){
+    //     fclose(fp);
+    // }else{
+    //     while(curr != NULL){
+    //         fprintf(fp, "-----------------------------------");
+    //         fprintf(fp, "\nName :\t %s", curr->patient.name);
+    //         fprintf(fp, "\nAge :\t %d", curr->patient.Age);
+    //         fprintf(fp, "\n\t\tAddress");
+    //         fprintf(fp, "\nHouse Name:\t%s", curr->patient.houseName);
+    //         fprintf(fp, "\nStreet    :\t %s", curr->patient.street);
+    //         fprintf(fp, "\nCity      :\t %s", curr->patient.city);
+    //         fprintf(fp, "\nSymptoms  :\t %s", curr->patient.symp);
+    //         fprintf(fp, "\n");
+    //         curr = curr->next;``
+    //     }
+    //     fclose(fp);
+    // }
     struct node* curr = head;
     if(curr == NULL){
-        fclose(fp);
+        return 0;
     }else{
+        FILE *fp;
+        fp = fopen("hospital.txt", "w");
         while(curr != NULL){
             fprintf(fp, "-----------------------------------");
             fprintf(fp, "\nName :\t %s", curr->patient.name);
@@ -262,6 +282,7 @@ void fileSave(void){
         }
         fclose(fp);
     }
+    return 0;
 }
 
 /**Function     menu
@@ -271,14 +292,19 @@ void fileSave(void){
  * @return      void
  */
 void menu(void){
-    int choice;
-    printf("\nWelcome to Hospital managment System\nPlease select your option");
+    menuLable: printf("\nWelcome to Hospital managment System\nPlease select your option");
+    char c;
     printf("1.\tInsert Data\n2.\tDelete Data\n3.\tEdit Data\n4.\tPrint All\n5.\tExit\n");
-    scanf("%d", &choice);
-    switch(choice){
+    scanf("%c", &c);
+    if(isdigit(c) == 0){
+        printf("\nWrong choice\n");
+        menu();
+    }
+    // scanf("%d", &choice);
+    switch(c){
         case '1':
             insertFirst(getData());
-            menu();
+            goto menuLable;
             break;
         case '2':
             delete();
