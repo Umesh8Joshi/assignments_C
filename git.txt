@@ -1,0 +1,27 @@
+* 950d337 (HEAD -> algos, origin/algos) Hash table done
+*   dd0e7f3 (origin/master, origin/HEAD, master) Merge pull request #3 from Umesh8Joshi/shell-in-c
+|\  
+| *   a2f43ba (origin/shell-in-c) Merge pull request #4 from Umesh8Joshi/master
+| |\  
+| |/  
+|/|   
+* |   102dc96 Merge pull request #2 from Umesh8Joshi/final
+|\ \  
+| | * 27e1ea2 (shell-in-c) Started Algos
+| | * c2d84cc Basic shell in C done
+| | * 10fa6e5 (origin/final, final) Infinite loop problem
+| |/  
+| * 6696512 Final program ready to use
+| * c7e5f19 (origin/del, del) Program done documentation needed
+| * 664dba2 Data deletion required
+|/  
+* 1efd377 Half Hospital done
+* 9861e3e Files done
+* 9b2bdf4 Files
+* dc78bb3 pseudocode
+* 9c2ba3e Sentance Half done
+* df08e18 Upper and lower done
+* 824885d File reading done
+* 9bb7054 read file done
+* ee913c4 Added txt file for functions
+* e6d9adf Initial commit
