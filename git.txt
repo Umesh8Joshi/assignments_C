@@ -1,0 +1,134 @@
+* commit 73ea5c0d3c30a30ed270dfd320b03787d57f357e (HEAD -> algos, origin/algos)
+| Author: umesh <Umesh14el007@gmail.com>
+| Date:   Tue Aug 7 12:59:18 2018 +0530
+| 
+|     Queue done
+|  
+* commit 950d3379ca70d68dee1d400cb194e0cd6bd395dc
+| Author: umesh <Umesh14el007@gmail.com>
+| Date:   Mon Aug 6 15:35:25 2018 +0530
+| 
+|     Hash table done
+|    
+*   commit dd0e7f3dce399aa6397f187b484ed5ac1d405444 (origin/master, origin/HEAD, master)
+|\  Merge: 102dc96 a2f43ba
+| | Author: Umesh Joshi <umesh14el007@gmail.com>
+| | Date:   Mon Aug 6 12:34:47 2018 +0530
+| | 
+| |     Merge pull request #3 from Umesh8Joshi/shell-in-c
+| |     
+| |     Shell in c
+| |     
+| *   commit a2f43ba668b6a50ce730d903aaa3fb00deb688f8 (origin/shell-in-c)
+| |\  Merge: 27e1ea2 102dc96
+| |/  Author: Umesh Joshi <umesh14el007@gmail.com>
+|/|   Date:   Mon Aug 6 12:33:25 2018 +0530
+| |   
+| |       Merge pull request #4 from Umesh8Joshi/master
+| |       
+| |       Merge pull request #2 from Umesh8Joshi/final
+| |     
+* |   commit 102dc96f7945fe357721891632ad43f9e560e910
+|\ \  Merge: 1efd377 6696512
+| | | Author: Umesh Joshi <umesh14el007@gmail.com>
+| | | Date:   Wed Aug 1 16:23:51 2018 +0530
+| | | 
+| | |     Merge pull request #2 from Umesh8Joshi/final
+| | |     
+| | |     Final
+| | |    
+| | * commit 27e1ea202db99ac7614df3f0071b99f034e705ec (shell-in-c)
+| | | Author: umesh <Umesh14el007@gmail.com>
+| | | Date:   Mon Aug 6 11:47:06 2018 +0530
+| | | 
+| | |     Started Algos
+| | |    
+| | * commit c2d84cccaadeca6a859a418899ab1ee3fb752d5e
+| | | Author: umesh <Umesh14el007@gmail.com>
+| | | Date:   Thu Aug 2 13:59:12 2018 +0530
+| | | 
+| | |     Basic shell in C done
+| | |    
+| | * commit 10fa6e5a3ed66a03e0ecfbd04492f93c68e5fec2 (origin/final, final)
+| |/  Author: umesh <Umesh14el007@gmail.com>
+| |   Date:   Wed Aug 1 16:53:47 2018 +0530
+| |   
+| |       Infinite loop problem
+| |   
+| * commit 66965120da5bf24ccdd8a4d98ee01ff5d2b6c7d9
+| | Author: umesh <Umesh14el007@gmail.com>
+| | Date:   Wed Aug 1 16:20:28 2018 +0530
+| | 
+| |     Final program ready to use
+| |   
+| * commit c7e5f190bdbd1cadbb4526efde2457cd724b88bc (origin/del, del)
+| | Author: umesh <Umesh14el007@gmail.com>
+| | Date:   Wed Aug 1 14:15:39 2018 +0530
+| | 
+| |     Program done documentation needed
+| |   
+| * commit 664dba23f3ab6e780fa3f832269e9b45028eceab
+|/  Author: umesh <Umesh14el007@gmail.com>
+|   Date:   Mon Jul 30 15:55:13 2018 +0530
+|   
+|       Data deletion required
+|  
+* commit 1efd377f9a48aa203d103a2a27c443f72ec71d7f
+| Author: umesh <Umesh14el007@gmail.com>
+| Date:   Mon Jul 30 14:50:31 2018 +0530
+| 
+|     Half Hospital done
+|  
+* commit 9861e3eea460969317f404857e9a98a3ed30686d
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Thu Jul 19 15:51:02 2018 +0530
+| 
+|     Files done
+|  
+* commit 9b2bdf4e686f272e2ce086fbdc9ab470feeeda89
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Thu Jul 19 14:59:49 2018 +0530
+| 
+|     Files
+|  
+* commit dc78bb3ab9cf2e8d2913febaa408fd3c652a91de
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Thu Jul 19 13:58:51 2018 +0530
+| 
+|     pseudocode
+|  
+* commit 9c2ba3e127435cd8f4679200c0e68f3646ef1abd
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Wed Jul 18 18:10:50 2018 +0530
+| 
+|     Sentance Half done
+|  
+* commit df08e18759cf585c15b6956e89ea1907fd1982e7
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Wed Jul 18 13:25:28 2018 +0530
+| 
+|     Upper and lower done
+|  
+* commit 824885d222b0e33c33de1d3ed4dce714486566ae
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Wed Jul 18 11:09:44 2018 +0530
+| 
+|     File reading done
+|  
+* commit 9bb705453a03a4b08b03c8eb352437a1323cb483
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Tue Jul 17 18:21:33 2018 +0530
+| 
+|     read file done
+|  
+* commit ee913c48702f71496a7860fa630fe630a7041864
+| Author: Umesh <umesh14el007@gmail.com>
+| Date:   Tue Jul 17 12:06:04 2018 +0530
+| 
+|     Added txt file for functions
+|  
+* commit e6d9adfc91f2ea856f0c0ec1746773ef177da362
+  Author: Umesh Joshi <umesh14el007@gmail.com>
+  Date:   Tue Jul 17 11:40:31 2018 +0530
+  
+      Initial commit
