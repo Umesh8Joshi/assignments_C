@@ -169,8 +169,38 @@ int fileSave(void){
     return 0;
 }
 
+void swap(struct Node *a, struct Node *b){
+    struct User temp = a->user;
+    a->user = b->user;
+    a->user = temp;
+}
+
+void sort(struct Node *head){
+    int swapped;
+    struct Node *ptr;
+    struct Node *lptr = NULL;
+    if(head == NULL){
+        return;
+    }
+    do{
+        swapped = 0;
+        ptr = head;
+
+        while(ptr->next != lptr){
+            if(ptr->user.name[0] < ptr->next->user.name[0]){
+                swap(ptr, ptr->next);
+                swapped = 1;
+            }
+            ptr = ptr->next;
+        }
+        lptr = ptr;
+    }while(swapped);
+    head = ptr;
+}
+
 void menu(void){
     int choice = 0;
+    sort(head);
     printf("\nWelcome to Telephone Directory\nPlease select your option\n");
     printf("1.\tEnter\n2.\tEdit\n3.\tPrint All\n4.\tDelete\n5.\tSave and Exit\n");
     scanf("%d", &choice);
